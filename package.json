@@ -1,0 +1,25 @@
+{
+  "name": "sponsor-list",
+  "version": "1.0.0",
+  "description": "Automated sponsor list generation for yamadashy",
+  "main": "index.js",
+  "scripts": {
+    "sponsors": "sponsorkit",
+    "sponsors:dev": "sponsorkit --dev",
+    "sponsors:config": "sponsorkit --dev --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamadashy/sponsor-list.git"
+  },
+  "keywords": [
+    "sponsors",
+    "github-sponsors",
+    "automation"
+  ],
+  "author": "yamadashy",
+  "license": "MIT",
+  "devDependencies": {
+    "sponsorkit": "^0.11.2"
+  }
+}

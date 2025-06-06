@@ -1,0 +1,44 @@
+name: Update Sponsors
+
+on:
+  schedule:
+    # Update daily at 9:00 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'sponsorkit.config.js'
+      - '.github/workflows/sponsors.yml'
+
+jobs:
+  update-sponsors:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SPONSORS_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update sponsors
+        run: npm run sponsors
+        env:
+          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add sponsors/
+          git diff --staged --quiet || git commit -m "feat: update sponsors [skip ci]"
+          git push
