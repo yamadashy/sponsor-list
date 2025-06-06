@@ -2,6 +2,7 @@
   "name": "sponsor-list",
   "version": "1.0.0",
   "description": "Automated sponsor list generation for yamadashy",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "sponsors": "sponsorkit",
@@ -20,6 +21,6 @@
   "author": "yamadashy",
   "license": "MIT",
   "devDependencies": {
-    "sponsorkit": "^0.11.2"
+    "sponsorkit": "^16.4.2"
   }
 }

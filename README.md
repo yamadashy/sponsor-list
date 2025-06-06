@@ -2,6 +2,8 @@
 
 Automated sponsor list generation for yamadashy using [SponsorKit](https://github.com/antfu-collective/sponsorkit).
 
+![Sponsors](https://cdn.jsdelivr.net/gh/yamadashy/sponsor-list/sponsors.svg)
+
 ## Setup
 
 1. **Install dependencies:**
@@ -11,9 +13,9 @@ Automated sponsor list generation for yamadashy using [SponsorKit](https://githu
 
 2. **Configure GitHub token:**
    - Create a [GitHub Personal Access Token](https://github.com/settings/tokens) with `read:user` and `read:org` scopes
-   - Copy `.env.example` to `.env` and add your token:
+   - Copy `.env.template` to `.env` and add your token:
      ```bash
-     cp .env.example .env
+     cp .env.template .env
      # Edit .env and add your SPONSORKIT_GITHUB_TOKEN
      ```
 
@@ -55,5 +57,5 @@ Sponsor images and data will be generated in the `sponsors/` directory:
 You can use the generated sponsor images in your other repositories:
 
 ```markdown
-![Sponsors](https://raw.githubusercontent.com/yamadashy/sponsor-list/main/sponsors/sponsors.svg)
+![Sponsors](https://cdn.jsdelivr.net/gh/yamadashy/sponsor-list/sponsors.svg)
 ```
