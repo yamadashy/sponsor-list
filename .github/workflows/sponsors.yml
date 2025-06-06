@@ -12,6 +12,9 @@ on:
       - 'sponsorkit.config.js'
       - '.github/workflows/sponsors.yml'
 
+permissions:
+  contents: write
+
 jobs:
   update-sponsors:
     runs-on: ubuntu-latest
@@ -19,8 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.SPONSORS_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,9 +37,11 @@ jobs:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
 
       - name: Commit and push if changed
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add sponsors/
-          git diff --staged --quiet || git commit -m "feat: update sponsors [skip ci]"
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'chore: update sponsors [skip ci]'
+          add: "sponsors.*"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
