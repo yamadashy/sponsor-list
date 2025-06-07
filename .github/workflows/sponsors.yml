@@ -8,9 +8,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'sponsorkit.config.js'
-      - '.github/workflows/sponsors.yml'
 
 permissions:
   contents: write
