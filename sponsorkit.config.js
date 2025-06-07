@@ -24,7 +24,7 @@ export default defineConfig({
     },
     {
       title: 'Sponsors',
-      preset: presets.medium,
+      preset: presets.small,
     },
   ],
 
