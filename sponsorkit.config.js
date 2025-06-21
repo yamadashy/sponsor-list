@@ -24,7 +24,19 @@ export default defineConfig({
     },
     {
       title: 'Sponsors',
-      preset: presets.small,
+      preset: {
+        avatar: {
+          size: 50
+        },
+        boxWidth: 80,
+        boxHeight: 90,
+        container: {
+          sidePadding: 20
+        },
+        name: {
+          maxLength: 13,
+        }
+      },
     },
   ],
 
