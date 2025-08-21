@@ -1,4 +1,14 @@
+# Sponsor List
+
 Automated sponsor list generation for yamadashy using [SponsorKit](https://github.com/antfu-collective/sponsorkit).
+
+## Support my work
+
+Please consider sponsoring me.
+
+[![Sponsor](https://github.com/szepeviktor/.github/raw/master/.github/assets/github-like-sponsor-button.svg)](https://github.com/sponsors/yamadashy)
+
+They already do.
 
 [![Sponsors](https://cdn.jsdelivr.net/gh/yamadashy/sponsor-list/sponsors/sponsors.svg)](https://github.com/sponsors/yamadashy)
 
