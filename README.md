@@ -6,7 +6,7 @@ Automated sponsor list generation for yamadashy using [SponsorKit](https://githu
 
 Please consider sponsoring me.
 
-[![Sponsor](https://github.com/szepeviktor/.github/raw/master/.github/assets/github-like-sponsor-button.svg)](https://github.com/sponsors/yamadashy)
+[![Sponsor](https://github.com/yamadashy/sponsor-list/raw/main/.github/assets/github-like-sponsor-button.svg)](https://github.com/sponsors/yamadashy)
 
 They already do.
 
