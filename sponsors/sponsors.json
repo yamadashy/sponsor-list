@@ -68228,7 +68228,7 @@
       }
     },
     "isOneTime": true,
-    "monthlyDollars": 5,
+    "monthlyDollars": -1,
     "privacyLevel": "PUBLIC",
     "tierName": "$5 one time",
     "createdAt": "2025-11-27T10:10:28Z",
