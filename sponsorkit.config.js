@@ -24,25 +24,46 @@ export default defineConfig({
     },
     {
       title: 'Sponsors',
+      monthlyDollars: 0,
       preset: {
         avatar: {
-          size: 50
+          size: 42,
+        },
+        boxWidth: 64,
+        boxHeight: 68,
+        container: {
+          sidePadding: 20,
+        },
+        name: {
+          maxLength: 10,
+        },
+      },
+    },
+    {
+      title: 'Core Sponsors',
+      monthlyDollars: 10,
+      preset: {
+        avatar: {
+          size: 50,
         },
         boxWidth: 80,
         boxHeight: 90,
         container: {
-          sidePadding: 20
+          sidePadding: 20,
         },
         name: {
           maxLength: 13,
-        }
+        },
       },
     },
   ],
 
+  // Exclude enterprise sponsors (displayed separately)
+  filter: (sponsor) => sponsor.monthlyDollars < 100,
+
   // Fallback avatar for users without avatars
   fallbackAvatar: 'https://github.com/yamadashy.png',
-  
+
   // Include private sponsors
   includePrivate: true,
 })
