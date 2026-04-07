@@ -15522,7 +15522,7 @@
       }
     },
     "isOneTime": false,
-    "monthlyDollars": 1,
+    "monthlyDollars": -1,
     "privacyLevel": "PUBLIC",
     "tierName": "$1 a month",
     "createdAt": "2025-01-11T13:32:34Z",
