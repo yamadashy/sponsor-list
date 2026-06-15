@@ -75372,7 +75372,7 @@
       }
     },
     "isOneTime": true,
-    "monthlyDollars": 1,
+    "monthlyDollars": -1,
     "privacyLevel": "PUBLIC",
     "tierName": "$1 one time",
     "createdAt": "2026-05-15T18:28:17Z",
