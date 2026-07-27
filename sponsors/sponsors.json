@@ -72960,9 +72960,9 @@
       }
     },
     "isOneTime": true,
-    "monthlyDollars": -1,
+    "monthlyDollars": 10,
     "privacyLevel": "PUBLIC",
-    "tierName": "$1 one time",
+    "tierName": "$10 one time",
     "createdAt": "2026-04-12T17:03:04Z",
     "provider": "github"
   },
