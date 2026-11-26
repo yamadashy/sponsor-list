@@ -3051,7 +3051,7 @@
       }
     },
     "isOneTime": false,
-    "monthlyDollars": 1,
+    "monthlyDollars": -1,
     "privacyLevel": "PUBLIC",
     "tierName": "$1 a month",
     "createdAt": "2024-07-22T01:08:30Z",
