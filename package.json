@@ -21,6 +21,6 @@
   "author": "yamadashy",
   "license": "MIT",
   "devDependencies": {
-    "sponsorkit": "^16.4.2"
+    "sponsorkit": "^19.0.0"
   }
 }
